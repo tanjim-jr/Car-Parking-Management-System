@@ -1,0 +1,206 @@
+/* Logo Container */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(120, 83%, 98%); /* Green color */
+    z-index: 9999;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+/* Login Page Layout */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh;
+    background: url('parking-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    color: #fff; /* Adjusts text color to ensure readability */
+}
+
+/* Login Form Container */
+.login-container {
+    background-color: #bccdeb70;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px; /* Adds spacing between the login form and footer */
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Login Button Styles */
+.login-btn {
+    width: 100%;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.login-btn:hover {
+    background-color: #138f19;
+    transform: translateY(-2px); /* Slightly lift button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow effect */
+}
+
+/* Signup Text */
+.signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-text a {
+    color: #147417;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Buttons with Transparent Background */
+.footer-btn {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 35px; /* Increased padding for better button size */
+    border: 2px solid transparent; /* Transparent border to avoid shifting layout */
+    border-radius: 5px;
+    background: linear-gradient(135deg, #4CAF50, #3e8e41); /* Gradient background */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect for Footer Buttons */
+.footer-btn:hover {
+    background: #45a049; /* Solid background on hover */
+    border-color: #fff; /* Light border color */
+    color: #fff; /* Maintain text color */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.footer-btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.8); /* Focus effect */
+}
+
+/* Footer Section with Dynamic Layout */
+.login-footer {
+    position: fixed;
+    top: 0; /* Places the footer at the top of the page */
+    right: 0;
+    left: 0; /* Stretches the footer across the full width */
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.634); /* Semi-transparent black background */
+    padding: 20px 0; /* Increased padding to create space for larger buttons */
+    z-index: 1000;
+}
+
+/* Footer Nav Section */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Safewheels Text Container */
+.safewheels-text {
+    position: fixed;
+    top: 50px; /* Adjust the position as needed */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; /* Ensure text is white */
+    z-index: 9999;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+
+/* Hover Effect for Footer Buttons */
+.footer-btn:hover {
+    background: #45a049; /* Solid background on hover */
+    border-color: #fff; /* Light border color */
+    color: #fff; /* Maintain text color */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Footer Buttons with Transparent Background */
+.footer-btn {
+    color: #4CAF50; /* Green text color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 35px; /* Increased padding */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    background: transparent; /* Transparent background */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .footer-nav {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 10px; /* Reduce space between buttons */
+    }
+
+    /* Safewheels Text Style for Mobile */
+    .safewheels-text {
+        font-size: 28px; /* Adjust font size for mobile */
+        top: 40px; /* Adjust vertical position for mobile */
+    }
+}

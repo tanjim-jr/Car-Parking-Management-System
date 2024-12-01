@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeWheels</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script src="home.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="logo">SafeWheels</div>
+          <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="login.html" class="signup-btn">Sign in</a></li>
+              <li><a href="register.html" class="signup-btn register-btn">Register</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+    <section class="hero-section" id="home">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>SafeWheels</h1>
+        <p>Streamline your parking with ease.</p>
+        <a href="#services" class="btn">View Services</a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h3 style="color: green">Parking made easy</h3>
+          <h2>Efficient Parking Solutions</h2>
+          <p>
+            SafeWheels makes car parking easy and efficient in Chittagong, BD.
+            Our simple system helps both parking owners and users manage their
+            dashboards easily. With secure login and registration, users can
+            access the platform safely. Say goodbye to parking problems and
+            enjoy a smooth, hassle-free experience with Safe Wheels!
+          </p>
+          <a href="#contact" class="btn">Get in touch</a>
+        </div>
+        <div class="about-image">
+          <img src="photo-1532751203793-812308a10d8e.avif" alt="Vintage Car" />
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="services">
+      <div class="services-container">
+        <h2>Effortless Parking</h2>
+        <p>Make parking management simple and efficient!</p>
+        <div class="services-cards">
+          <!-- Card 1 -->
+          <div class="service-card" id="secure-login-card">
+            <img src="login.avif" alt="Secure Login and Registration" />
+
+            <h3>Secure login and registration</h3>
+            <p>
+              Effortlessly manage user access with secure login and
+              registration.
+            </p>
+          </div>
+          <!-- Popup Overlay for Card 1 -->
+          <div id="service-card" class="popup-overlay hidden">
+            <div class="popup-content">
+              <h2>Secure Login and Registration</h2>
+              <p>
+                SafeWheels ensures a seamless experience for both car owners and
+                customers with our secure login and registration system. Users
+                can effortlessly create accounts and log in to access their
+                personalized dashboards. This feature not only enhances security
+                but also simplifies the parking management process. Owners can
+                manage their parking spaces effectively, while customers can
+                easily book their spots. By prioritizing user-friendly access,
+                SafeWheels empowers everyone involved in parking operations to
+                engage confidently, making it the ideal solution for modern
+                parking management.
+              </p>
+              <button id="close-popup-card-1" class="btn">Close</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card" id="user-friendly-dashboards-card">
+            <img src="images.jpg" alt="User-Friendly Dashboards" />
+            <h3>User-Friendly Dashboards</h3>
+            <p>
+              Navigate through intuitive dashboards tailored for owners and
+              customers.
+            </p>
+          </div>
+
+          <!-- Popup for Card 2 -->
+          <div id="popup-dashboard" class="popup-overlay hidden">
+            <div class="popup-content">
+              <h2>User-Friendly Dashboards</h2>
+              <p>
+                <!-- Add your paragraph content here -->
+                SafeWheels offers user-friendly dashboards that cater
+                specifically to the needs of car owners and customers. With
+                intuitive layouts and easy navigation, users can quickly access
+                vital information regarding parking availability, reservations,
+                and management tools. Owners gain insights into their parking
+                spaces, while customers can monitor their bookings in real-time.
+                The design focuses on enhancing the user experience, ensuring
+                that all interactions are straightforward and efficient. SafeWheel's
+                dashboards represent a perfect blend of functionality and
+                simplicity, making parking management hassle-free for everyone
+                involved.
+              </p>
+              <button id="close-dashboard-popup" class="btn">Close</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card" id="real-time-parking-card">
+            <div class="service-icon">
+              <img
+                src="real time parking.jpg"
+                alt="Real-Time Parking Management"
+              />
+            </div>
+            <h3>Real-Time Parking Management</h3>
+            <p>
+              Keep track of parking availability and make real-time decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup Overlay -->
+      <div id="popup" class="popup-overlay hidden">
+        <div class="popup-content">
+          <h2>Real-Time Parking Management</h2>
+          <p>
+            Experience the power of real-time parking management with Safe
+            wheels. Our system provides instant updates on parking availability,
+            allowing users to make informed decisions on-the-go. Owners can
+            monitor occupancy levels and adjust pricing dynamically, while
+            customers enjoy the convenience of finding available spaces in
+            real-time. This feature not only enhances the efficiency of parking
+            operations but also elevates the overall user experience. With
+            SafeWheels, you can stay ahead of the curve, ensuring that your
+            parking operations run smoothly and effectively, even in the busiest
+            of times.
+          </p>
+          <button id="close-popup" class="btn">Close</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact-us" class="contact-us-section">
+      <div class="contact-container">
+          <!-- Left side with "Contact Us" -->
+          <div class="contact-left">
+              <!-- Link to the login page -->
+              <a href="login.html" class="contact-us-text">Contact Us</a>
+          </div>
+  
+          <!-- Rest of your contact-right content -->
+          <div class="contact-right">
+              <!-- Example of cards -->
+              <div class="card">
+                  <h3>Email</h3>
+                  <p class="email-item">
+                      
+                      <a href="mailto:tanjimjrcsecu@gmail.com" class="email-link">tanjimjrcsecu@gmail.com</a>
+                  </p>
+              </div>
+              <div class="card">
+                  <h3>Location</h3>
+                  <p class="location-item">
+                      
+                      <a href="https://www.google.com/maps/search/?q=Chittagong,+Hathazari" target="_blank" class="location-link">Chittagong, Hathazari</a>
+                  </p>
+              </div>
+          
+     
+        
+          <!-- Card 3 -->
+          <div class="card">
+            <h3>Hours</h3>
+            <div class="hours">
+              <div class="time-row">
+                <span class="day">Monday:</span> <span class="time">9:00am – 10:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Tuesday:</span> <span class="time">9:00am – 10:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Wednesday:</span> <span class="time">9:00am – 10:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Thursday:</span> <span class="time">9:00am – 10:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Friday:</span> <span class="time">9:00am – 10:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Saturday:</span> <span class="time">9:00am – 6:00pm</span>
+              </div>
+              <div class="time-row">
+                <span class="day">Sunday:</span> <span class="time">9:00am – 12:00pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>    

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="regedit-style.css">
+</head>
+<body>
+    <!-- SafeWheels Logo at the top-left -->
+    <div class="logo-container">
+        <span class="logo">SafeWheels</span>
+    </div>
+
+    <!-- Registration Form Container -->
+    <div class="registration-container">
+        <div class="form-header">
+            <h1>Register</h1>
+        </div>
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Type Your First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Type Your Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Type Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Type Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Choose Password</label>
+                <input type="password" id="password" placeholder="Type Your Password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Type Your Password" required>
+            </div>
+            
+            <!-- Role Dropdown -->
+            <div class="form-group role-dropdown">
+                <label for="role">Select Your Role</label>
+                <select name="role" id="role" required>
+                    <option value="" selected disabled>Select Your Role</option>
+                    <option value="admin" class="role-admin">Admin</option>
+                    <option value="customer" class="role-customer">Customer</option>
+                    <option value="owner" class="role-owner">Owner</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn-submit">Create Account</button>
+        </form>
+        <p class="login-text">
+            Already have an Account? <a href="login.html">Log in</a>
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="registration-footer">
+        <nav>
+            <a href="home.html#home" class="footer-btn">Home</a>
+            <a href="home.html#services" class="footer-btn">Services</a>
+            <a href="home.html#contact-us" class="footer-btn">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html>
